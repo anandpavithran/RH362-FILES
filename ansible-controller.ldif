@@ -1,0 +1,8 @@
+dn: uid=controller,cn=sysaccounts,cn=etc,dc=lab,dc=example,dc=com
+changetype: add
+objectclass: account
+objectclass: simplesecurityobject
+uid: controller
+userPassword: controller123
+passwordExpirationTime: 20280101000000Z
+nsIdleTimeout: 0
