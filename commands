@@ -1,0 +1,6 @@
+ldapsearch -D "uid=controller,cn=sysaccounts,cn=etc,dc=lab,dc=example,dc=com" -W -h idm.lab.example.com -b "cn=accounts,dc=lab,dc=example,dc=com" uid=productsuser02
+ldapsearch -D "uid=controller,cn=sysaccounts,cn=etc,dc=lab,dc=example,dc=com" -W -h idm.lab.example.com -b "cn=ipausers,cn=groups,cn=accounts,dc=lab,dc=example,dc=com"
+ldapsearch -D "uid=controller,cn=sysaccounts,cn=etc,dc=lab,dc=example,dc=com" -W -h idm.lab.example.com -b "cn=accounts,dc=lab,dc=example,dc=com" uid=productsuser02
+scp student@idm:/etc/ipa/ca.crt /etc/pki/ca-trust/source/anchors/ipa_ca.crt
+update-ca-trust
+  
