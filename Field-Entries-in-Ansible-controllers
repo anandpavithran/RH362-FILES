@@ -1,0 +1,29 @@
+ldap://idm.lab.example.com:389
+controller123
+GroupOfNamesType
+On
+uid=controller,cn=sysaccounts,cn=etc,dc=lab,dc=example,dc=com
+CN=productsgroup04,CN=groups,CN=accounts,DC=lab,DC=example,DC=com
+
+[
+"CN=users,CN=accounts,DC=lab,DC=example,DC=com",
+"SCOPE_SUBTREE",
+"(uid=%(user)s)"
+]
+
+[
+"CN=groups,CN=accounts,DC=lab,DC=example,DC=com",
+"SCOPE_SUBTREE",
+"(objectClass=ipausergroup)"
+]
+
+{
+"first_name": "givenName",
+"last_name": "sn",
+"email": "mail"
+}
+
+{
+"is_superuser":
+"CN=productsgroup02,CN=groups,CN=accounts,DC=lab,DC=example,DC=com"
+}
